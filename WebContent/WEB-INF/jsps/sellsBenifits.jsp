@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Benefits</title>
 
-<%@include file="sellerHeader.jsp" %>
+<%@include file="sellsHeader.jsp" %>
  <section id="content-wrapper">
    <div id="content">
    
@@ -12,4 +12,4 @@
     </div> <!-- end of content -->
 </section>
 
-<%@include file="sellerFooter.jsp" %>
+<%@include file="sellsFooter.jsp" %>

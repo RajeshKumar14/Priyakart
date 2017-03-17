@@ -1,7 +1,6 @@
 package com.app.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -19,20 +18,20 @@ public class InsertItemServlet extends HttpServlet {
 		try{
 			//1.reading params
 			String itemname=request.getParameter("itemName");
-			String itemcost=request.getParameter("itemCost");
-			String marginvalue=request.getParameter("marginValue");
+			String itemmrp=request.getParameter("itemMrp");
+			String margindiscount=request.getParameter("marginDiscount");
 			
 			//2.convert the values
-			double itemCost=Double.parseDouble(itemcost);
-			int marginValue=Integer.parseInt(marginvalue);
+			double itemMrp=Double.parseDouble(itemmrp);
+			double marginDiscount=Integer.parseInt(margindiscount);
 			
 			//3.create object(empty)
 			 Item item=new Item();
 			 
 			//4.set the values
 			 item.setItemName(itemname);
-			 item.setItemCost(itemCost);
-			 item.setMarginValue(marginValue);
+			 item.setItemMrp(itemMrp);
+			 item.setMarginDiscount(marginDiscount);
 			 
 			//5.convert obj to json
 			 String json=JsonUtil.convertObjToJson(item);

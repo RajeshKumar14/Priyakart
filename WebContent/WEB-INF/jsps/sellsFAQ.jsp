@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>FAQ</title>
-<%@include file="sellerHeader.jsp" %>
+<%@include file="sellsHeader.jsp" %>
 <style>
 #contents {
 	width: 900px;
@@ -89,5 +89,5 @@ ul#selling-faq li.x{
   <br>
 </section>
 
-<%@include file="sellerFooter.jsp" %>
+<%@include file="sellsFooter.jsp" %>
    

@@ -4,7 +4,7 @@
 <title>Pricing</title>
 <link href='../css/design.css' type='text/css' rel='stylesheet'/>
 
-<%@include file="sellerHeader.jsp" %>
+<%@include file="sellsHeader.jsp" %>
  <section id="content-wrapper">
    <div id="content">
    
@@ -55,4 +55,4 @@
    
     </div> <!-- end of content --> 
 </section>
-<%@include file="sellerFooter.jsp" %>
+<%@include file="sellsFooter.jsp" %>

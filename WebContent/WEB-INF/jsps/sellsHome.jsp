@@ -14,8 +14,8 @@
 }
 </style>
 
-<%@include file="sellerHeader.jsp" %>
+<%@include file="sellsHeader.jsp" %>
 <section id="sells-on-priyakart">
 
 </section>
-<%@include file="sellerFooter.jsp" %>
+<%@include file="sellsFooter.jsp" %>
