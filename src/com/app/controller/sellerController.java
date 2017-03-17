@@ -5,9 +5,11 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class sellerHubController {
+public class sellerController {
+
 	
-	@RequestMapping("/seller")
+	//=====Seller Hub=======
+	@RequestMapping("/sells")
 	public String showSellsHomePage(ModelMap map)
 	   {
 		return "sellsHome";
@@ -27,4 +29,14 @@ public class sellerHubController {
 	  {
 	    return "sellsBenifits";
 	  }
+	
+	//=========Seller===========
+	
+	@RequestMapping("/seller")
+	public String showSellerHomePage(ModelMap map)
+	  {
+	    return "sellsDashboard";
+	  }
+	
+	
 }
