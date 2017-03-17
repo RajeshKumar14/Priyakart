@@ -37,6 +37,15 @@ public class sellerController {
 	  {
 	    return "sellsDashboard";
 	  }
+	@RequestMapping("/regSeller")
+	public String showSellerRegPage(ModelMap map)
+	  {
+	    return "SellerReg";
+	  }
+	
+	
+	
+	
 	
 	
 }

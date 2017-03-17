@@ -19,7 +19,7 @@
       </div>
 	   <nav id='seller_menu'>
         <ul>
-         <li><a href="seller">HOME</a></li>
+         <li><a href="sells">HOME</a></li>
          <li><a href="pricing">PRICING</a></li>
          <li><a href="faq">FAQS</a></li>
          <li><a href="benefits">BENIFITS </a></li>

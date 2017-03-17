@@ -37,7 +37,7 @@ public class InsertItemServlet extends HttpServlet {
 			 String json=JsonUtil.convertObjToJson(item);
 				
 			//6.get response msg back
-			  String msg=RestClient.connectToProvider(json);
+			  String msg=RestClient.connectToProviderToSaveItem(json);
 			  request.setAttribute("msg",msg);
 				
 			//7.dispatch to UI
