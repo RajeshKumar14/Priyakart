@@ -15,6 +15,49 @@
 	<context:annotation-config/>
 	<context:component-scan base-package="com.app"/>
 	<aop:aspectj-autoproxy/>
+	<!-- DB Configuration -->
+	<!-- 1.DMDS Obj -->
+	<bean
+	  class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+	  name="dsObj"
+	  p:driverClassName="oracle.jdbc.driver.OracleDriver"
+	  p:url="jdbc:oracle:thin:@localhost:1521:xe"
+	  p:username=""
+	  p:password=""
+	/>
+	<!-- 2.ASFB Obj -->
+	<bean
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean"
+		name="sfObj"
+	>
+		<property name="dataSource">
+			<ref bean="dsObj"/>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.OracleDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+		<property name="annotatedClasses">
+			<list>
+			 <value>com.app.model.Item</value>
+             <value>com.app.model.Consumer</value>
+             <value>com.app.model.Seller</value>
+             <value>com.app.model.Address</value>
+			</list>
+		</property>
+	</bean>
+	<!-- 3.HT Obj -->
+	<bean
+		class="org.springframework.orm.hibernate3.HibernateTemplate"
+		name="htObj"
+	>
+		<property name="sessionFactory">
+			<ref bean="sfObj"/>
+		</property>
+	</bean>
 	
 	<!-- UI Configurations -->
 	<!-- View Resolver Obj -->

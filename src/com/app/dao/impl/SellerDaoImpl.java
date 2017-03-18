@@ -1,6 +1,4 @@
 package com.app.dao.impl;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.app.client.RestClient;
@@ -11,9 +9,6 @@ import com.app.util.JsonUtil;
 @Repository
 public class SellerDaoImpl implements ISellerDao{
      
-	@Autowired
-	private RestClient rc;
-	
 	
 	@Override
 	public String saveSeller(Seller seller) {
@@ -22,7 +17,7 @@ public class SellerDaoImpl implements ISellerDao{
 		 String json=JsonUtil.convertObjToJson(seller);
 			
 		//2.get response msg back
-		  return rc.connectToProviderToSaveSeller(json);
+		  return RestClient.connectToProviderToSaveSeller(json);
 	}
 	
 

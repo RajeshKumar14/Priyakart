@@ -11,10 +11,10 @@
 	  <table border="0" cellpadding="10" align="center">
 	   <tr><th colspan="2" align="center">Create a Seller Account </th></tr>
 	   <tr><td>Name</td>
-	   <td><input type="text"  name="firstName" size="15"  placeholder="first name"/>                
-	       <input type="text"  name="lastName" size="10" placeholder="last name"/></td></tr>
+	   <td><input type="text"  name="sellerFirstName" size="15"  placeholder="first name"/>                
+	       <input type="text"  name="sellerLastName" size="10" placeholder="last name"/></td></tr>
 	   <tr><td>Email Id</td>
-	       <td><input type="text" name="email" size="30" placeholder="Email address"></td>	</tr>
+	       <td><input type="text" name="sellerEmail" size="30" placeholder="Email address"></td>	</tr>
 	   <tr><td>Mobile No</td>
 	       <td colspan="2" align="left"><input type="text" name="mobileNo" size="30" placeholder="mobile number"></td></tr>
 	   <tr><td colspan="2" align="center"><button type="submit" name="sellerReg">Create Account</button><br></td></tr>
