@@ -16,11 +16,6 @@ public class Seller {
 		super();
 	}
 
-	public Seller(String firstName) {
-		super();
-		this.firstName = firstName;
-	}
-
 	public Seller(String firstName, String lastName) {
 		super();
 		this.firstName = firstName;

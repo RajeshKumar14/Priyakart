@@ -9,7 +9,7 @@ import com.sun.jersey.api.client.WebResource;
 
 public class RestClient {
 
-	public static String connectToProviderToSaveItem(String json){
+	public String connectToProviderToSaveItem(String json){
 		String url="http://localhost:8084/Online_Shopping_Cart/rest/itemService/saveItem";
 		String un="rajeshtnb14@gmail.com";
 		String pwd="53a920";
@@ -33,8 +33,8 @@ public class RestClient {
 		return msg;
 	}
 	
-	public static String connectToProviderToSaveSeller(String json){
-		String url="http://localhost:8084/Online_Shopping_Cart/rest/sellerService/insertItem";
+	public  String connectToProviderToSaveSeller(String json){
+		String url="http://localhost:8084/Online_Shopping_Cart/rest/sellerService/saveSeller";
 		String msg=null;
 		try {
 			Client c=Client.create();

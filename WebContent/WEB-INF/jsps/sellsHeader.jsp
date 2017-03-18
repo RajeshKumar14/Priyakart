@@ -2,8 +2,8 @@
  <link href='../css/design.css' type='text/css' rel='stylesheet'/>
  
 <style>
-   table tr{font-family:courier new;font-weight:900;font-size:18px;}
-   table tr td,input,button{
+   table tr th{font-family:courier new;font-weight:900;font-size:18px;}
+   table tr td,input,button a{
    font-family:arial;font-size:16px;
    }
    input,button{
@@ -29,9 +29,10 @@
 	  <div  style="padding:50px;">
          <form name="loginForm" action="loginSeller" method="post">
             <table>
-              <tr><td >&emsp;&emsp;&emsp;<input type="text" size="22" name="sellerId" placeholder="Username or Email">
-              <input type="password" size="18" name="password" placeholder="Password">
-              <button type="submit" name="login">Log In</button></td></tr>
+              <tr><td><input type="text" size="20" name="sellerId" placeholder="Username or Email">
+              <input type="password" size="14" name="password" placeholder="Password">
+              <button type="submit" name="login">Log In</button>
+              &nbsp;&nbsp;<button><a href="regSeller">Start Selling</a></button></td></tr>
              </table>
           </form>
 	  </div>

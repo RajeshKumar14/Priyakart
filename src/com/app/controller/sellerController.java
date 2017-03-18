@@ -35,13 +35,14 @@ public class sellerController {
 	@RequestMapping("/seller")
 	public String showSellerHomePage(ModelMap map)
 	  {
-	    return "sellsDashboard";
+	    return "sellerDashboard";
 	  }
 	@RequestMapping("/regSeller")
 	public String showSellerRegPage(ModelMap map)
 	  {
 	    return "SellerReg";
 	  }
+	
 	
 	
 	

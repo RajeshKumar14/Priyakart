@@ -2,11 +2,9 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Register to SellerHub</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-    <link href='../css/design.css' type='text/css' rel='stylesheet'/>
+   <link href='../css/design.css' type='text/css' rel='stylesheet'/>
     
-<%@include file="sellerHeader.jsp" %>   
+<%@include file="sellsHeader.jsp" %>   
 <section id="content-wrapper">
   <div id="content">
    <form name="sellerForm" action="insertSeller" method="POST">
