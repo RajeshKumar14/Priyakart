@@ -1,5 +1,8 @@
 package com.app.model;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Address {
 	private String addr1;
 	private String addr2;

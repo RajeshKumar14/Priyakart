@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.app.model.Seller;
-import com.app.service.impl.SellerServiceImpl;
+import com.app.service.ISellerService;
 
 @Controller
 public class SellerController {
 	
 	@Autowired
-	private SellerServiceImpl service;
+	private ISellerService service;
 	
 	//=====Seller Hub=======
 	@RequestMapping("/sells")

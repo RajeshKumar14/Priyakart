@@ -1,5 +1,8 @@
 package com.app.model;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Item {
 	private String itemName;
 	private String itemType;
