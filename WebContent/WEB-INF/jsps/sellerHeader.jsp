@@ -34,11 +34,11 @@
              <tr><td>&emsp;
             <td>
 				<c:choose>
-				 <c:when test="${sellerFirstName eq null}">
+				 <c:when test="${msg eq null}">
 			     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<div id='error'>Invalid Log in Given</div>
 				 </c:when>
 				 <c:otherwise>
-				  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<div id='dyn'>Hi <b> ${sellerFirstName} !</b></div>
+				  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<div id='dyn'>Hi <b> ${msg} !</b></div>
 				 </c:otherwise>
 			    </c:choose>
 			 </td></tr>

@@ -19,6 +19,13 @@ public class SellerDaoImpl implements ISellerDao{
 		//2.get response msg back
 		  return RestClient.connectToProviderToSaveSeller(json);
 	}
+
+	@Override
+	public String getSellerByUmailAndPwd(String sellerEmail, String Pwd) {
+		
+		//2.get response msg back
+		return RestClient.connectToProviderToLoginSeller(sellerEmail, Pwd);
+	}
 	
 
 }

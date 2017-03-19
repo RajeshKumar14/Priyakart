@@ -18,4 +18,10 @@ public class SellerServiceImpl implements ISellerService{
 		return dao.saveSeller(seller);
 	}
 	
+	@Override
+	public String getSellerByUmailAndPwd(String sellerEmail, String Pwd) {
+		
+		return dao.getSellerByUmailAndPwd(sellerEmail, Pwd);
+	}
+	
 }

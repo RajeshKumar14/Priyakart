@@ -9,6 +9,7 @@ import com.sun.jersey.api.client.WebResource;
 
 public class RestClient {
 
+	//============Save Item in Vendor DB=============
 	public static String connectToProviderToSaveItem(String json){
 		String url="http://localhost:8084/Online_Shopping_Cart/rest/itemService/saveItem";
 		String un="rajeshtnb14@gmail.com";
@@ -33,6 +34,7 @@ public class RestClient {
 		return msg;
 	}
 	
+	//============Save Seller in Vendor DB=============
 	public static String connectToProviderToSaveSeller(String json){
 		String url="http://localhost:8084/Online_Shopping_Cart/rest/sellerService/saveSeller";
 		String msg=null;
@@ -46,5 +48,33 @@ public class RestClient {
 		   } catch (Exception e) {e.printStackTrace();}
 		return msg;
 	  }
+	
+	//============Login Seller in Vendor DB=============
+	public static String connectToProviderToLoginSeller(String sellerEmail,String Pwd){
+		String url="http://localhost:8084/Online_Shopping_Cart/rest/sellerService/loginSeller";
+		String un=sellerEmail;
+		String pwd=Pwd;
+		String msg=null;
+		try {
+			Client c=Client.create();
+			WebResource r=c.resource(url);
+
+			ClientResponse cr=r.type(MediaType.APPLICATION_JSON)
+								.header("user",un)
+								.header("password", CodecUtil.doEncode(pwd))
+								.post(ClientResponse.class);
+			msg=cr.getEntity(String.class);
+
+		   } catch (Exception e) {
+			e.printStackTrace();
+		   }
+		return msg;
+	  }
+
+	//============Logout=============================
+	
+	
+	
+	
 	
 }
