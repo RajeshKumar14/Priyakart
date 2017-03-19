@@ -38,7 +38,7 @@
 			     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<div id='error'>Invalid Log in Given</div>
 				 </c:when>
 				 <c:otherwise>
-				  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<div id='dyn'>Hi <b> ${msg} !</b></div>
+				  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<div id='dyn'>Hi <b> ${msg}!</b></div>
 				 </c:otherwise>
 			    </c:choose>
 			 </td></tr>

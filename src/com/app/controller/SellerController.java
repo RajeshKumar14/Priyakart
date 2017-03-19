@@ -87,7 +87,7 @@ public class SellerController {
 		}else{
 			//create error msg and goto login page
 			map.addAttribute("msg",msg);
-			pageName="SellsHome";
+			pageName="sellsHome";
 		}
 		
 	 return pageName;	
@@ -100,10 +100,10 @@ public class SellerController {
 	public String doLogout(HttpServletRequest req,ModelMap map){
 		//read current session of user
 		HttpSession ses=req.getSession(false);
-		ses.setAttribute("sellerFirstName", null);
+		ses.setAttribute("msg", null);
 		ses.invalidate();
 		map.addAttribute("msg", "Logout success...");
-		return "priyakart";
+		return "SellsHome";
 	}
 	
 }

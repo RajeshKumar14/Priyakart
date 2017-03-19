@@ -10,12 +10,12 @@
   <div id="home_header"> 
       <nav id='item_top_menu'>
         <ul>
-          <li><a href="seller">Sell on Priyakart</a></li>
+          <li><a href="sells">Sell on Priyakart</a></li>
           <li><a href="#">GiftCard </a></li>
           <li><a href="#">Customer Care </a></li>
           <li><a href="#">Track Order</a></li>
-          <li><a href="regConsumer">SignUp </a></li>
-          <li><a href="loginConsumer">LogIn </a></li>
+          <li><a href="regCons">SignUp </a></li>
+          <li><a href="loginCons">LogIn </a></li>
         </ul>
       </nav>
 	

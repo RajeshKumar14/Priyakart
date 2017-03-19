@@ -15,7 +15,7 @@
         <filter-class>com.app.filter.SessionCheckFilter</filter-class>
         <init-param>
     	    <param-name>avoid-urls</param-name>
-            <param-value>/Priyakart/,/Priyakart/mvc/regSeller,/Priyakart/mvc/loginSeller,/Priyakart/mvc/insertSeller,/Priyakart/mvc/priyakart,/Priyakart/mvc/sells,/Priyakart/mvc/pricing,/Priyakart/mvc/faq,/Priyakart/mvc/benefits</param-value>
+            <param-value>/Priyakart/,/Priyakart/mvc/regSeller,/Priyakart/mvc/loginSeller,/Priyakart/mvc/insertSeller,/Priyakart/mvc/regCons,/Priyakart/mvc/loginCons,/Priyakart/mvc/priyakart,/Priyakart/mvc/sells,/Priyakart/mvc/pricing,/Priyakart/mvc/faq,/Priyakart/mvc/benefits</param-value>
         </init-param>
     </filter>
     <filter-mapping>

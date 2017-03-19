@@ -16,6 +16,6 @@
 
 <%@include file="sellsHeader.jsp" %>
 <section id="sells-on-priyakart">
-
+${msg}
 </section>
 <%@include file="sellsFooter.jsp" %>
